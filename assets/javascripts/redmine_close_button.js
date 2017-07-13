@@ -1,4 +1,5 @@
 (function() {
+	
 	var ID_CLOSED = 5, ID_REJECTED = 6;
 	if (window.jQuery) {
 		// redmine uses jQuery so use it.
@@ -51,7 +52,7 @@
 
 				var delButton = $(this).find('a.icon-del');
 				if (delButton.length > 0) {
-					closeButton.insertAfter(delButton);
+					closeButton.insertBefore(delButton);
 				} else {
 					$(this).append(closeButton);
 				}
