@@ -1,0 +1,1 @@
+get 'issues/:id/cancel' => 'issue_cancel#create', as: 'issue_cancel'
