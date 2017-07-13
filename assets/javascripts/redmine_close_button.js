@@ -51,7 +51,7 @@
 
 				var delButton = $(this).find('a.icon-del');
 				if (delButton.length > 0) {
-					closeButton.insertBefore(delButton);
+					closeButton.insertAfter(delButton);
 				} else {
 					$(this).append(closeButton);
 				}
