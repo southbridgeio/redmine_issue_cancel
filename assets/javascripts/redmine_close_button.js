@@ -20,7 +20,7 @@
 				var closeButton = closeButtonTemplate
 					.clone()
 					.css('display', 'inline')
-					.click(closer);
+					
  
 					$(this).append(closeButton);
 				 
@@ -52,7 +52,6 @@
 				var area = areas[ai];
 				var closeButton = closeButtonTemplate.cloneNode(true);
 				closeButton.style.display = 'inline';
-				closeButton.observe('click', closer);
 			
 				area.appendChild(closeButton);
 			}
