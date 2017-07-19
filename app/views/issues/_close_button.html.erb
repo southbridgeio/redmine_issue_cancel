@@ -1,4 +1,4 @@
-<% if @project.module_enabled?(:issue_cancel) %>
+<% if @project.module_enabled?(:issue_cancel)  && !@issue.closed? %>
 
 	<%= stylesheet_link_tag "redmine_close_button.css", :plugin => 'redmine_issue_cancel' %>
 

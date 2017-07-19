@@ -1,6 +1,5 @@
 (function() {
 
-  var ID_CLOSED = 5;	
 	if (window.jQuery) {
 		// redmine uses jQuery so use it.
 		jQuery(document).ready(function() {
@@ -10,23 +9,6 @@
 				return;
 			}
 		
-			var options = s.get(0).childNodes;
-			var needCloseButton = true;
-			for (var i = options.length - 1; i >= 0; i--) {
-				var option = options[i];
-				var v = parseInt(option.value, 10);
-				if (v === ID_CLOSED) {
-					if (option.selected) {
-						needCloseButton = false;
-						break;
-					} else {
-						needCloseButton = true;
-					}
-				}
-			}
-			if (!needCloseButton) {
-				return;
-			}
 
 			var f = $('#issue-form');
 			var areas = $('div#content>div.contextual:has(a.icon)');
@@ -58,25 +40,6 @@
 				return;
 			}
 			 
-			var options = s.childNodes;
-			var needCloseButton = true;
-			for (var i = options.length - 1; i >= 0; i--) {
-				var option = options[i];
-				var v = parseInt(option.value, 10);
-				 
-				if (v === ID_CLOSED) {
-					if (option.selected) {
-						needCloseButton = false;
-						break;
-					} else {
-						needCloseButton = true;
-					}
-				}
-			}
-			if (!needCloseButton) {
-				return;
-			}
-
 			var f = $('issue-form');
 			var all_areas = $$('div#content>div.contextual');
 			var areas = [];
