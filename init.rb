@@ -1,6 +1,6 @@
-require 'redmine'
-
 require_dependency 'redmine_close_button/hooks'
+
+Rails.application.config.eager_load_paths += Dir.glob("#{Rails.application.config.root}/plugins/redmine_issue_cancel/{app/controllers}")
 
 Redmine::Plugin.register :redmine_issue_cancel do
   name 'Redmine Cancel Issue Button Plugin'
