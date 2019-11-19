@@ -7,8 +7,8 @@ Redmine::Plugin.register :redmine_issue_cancel do
   author 'Southbridge'
   description 'This plugins enables you to cancel issues quickly using the Cancel Issue button.'
   version '0.0.1'
-  url 'https://github.com/centosadmin/redmine_issue_cancel' if respond_to?(:url)
-  author_url 'https://github.com/centosadmin'
+  url 'https://github.com/southbridgeio/redmine_issue_cancel' if respond_to?(:url)
+  author_url 'https://github.com/southbridgeio'
   requires_redmine :version_or_higher => '0.9.0'
 
   settings(default: {
