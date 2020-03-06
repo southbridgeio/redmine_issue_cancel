@@ -2,7 +2,7 @@
 ru:
   project_module_issue_cancel: Кнопка смены статуса "Отменить" 
 
-  button_close: "Отменить"
+  button_close: "Закрыть"
   settings:
     cancel_issue_statuses: "При отмене задачи ставить статус"
 
