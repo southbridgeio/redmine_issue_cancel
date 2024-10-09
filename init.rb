@@ -1,4 +1,4 @@
-require_dependency 'redmine_close_button/hooks'
+require_dependency './plugins/redmine_issue_cancel/lib/redmine_close_button/hooks'
 
 Rails.application.config.eager_load_paths += Dir.glob("#{Rails.application.config.root}/plugins/redmine_issue_cancel/{app/controllers}")
 
