@@ -1,6 +1,4 @@
 class IssueCancelController < ApplicationController
-  # unloadable
-
   def create
 
     current_user = User.current
