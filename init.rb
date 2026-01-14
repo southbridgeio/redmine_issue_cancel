@@ -17,6 +17,5 @@ Redmine::Plugin.register :redmine_issue_cancel do
 
   project_module :issue_cancel do
     permission :create_issue_cancel,  issue_cancel: :create
-  end  
+  end
 end
-
